@@ -85,6 +85,7 @@ ROOT_URLCONF = 'backend.urls'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React frontend URL
     # "https://2cea-103-59-216-189.ngrok-free.app"
+    "https://sassa-shopify-facebook-frontend.vercel.app/"
     "https://98e7-103-59-216-189.ngrok-free.app"
 ]
 
