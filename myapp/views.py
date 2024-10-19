@@ -87,7 +87,9 @@ class FacebookCallbackView(APIView):
 class GetCampaignsView(APIView):
     def get(self, request, account_id):
         auth_header = request.headers.get('Authorization')
+        print("--------------------------",auth_header)
         access_token = auth_header.split(' ')[1]
+        print("=======================",access_token)
 
         # access_token = request.GET.get("access_token")  # Retrieve the access token
         start_date = request.GET.get("startDate")
